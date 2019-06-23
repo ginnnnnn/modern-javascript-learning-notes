@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>firebase</title>
+</head>
+
+<body>
+    <div class="container my-5">
+        <h2>Recipes</h2>
+        <ul>
+            <li>mushroom curry</li>
+            <li>Thai green curry</li>
+        </ul>
+        <form>
+            <label for="recipe">Add a new recipes</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="recipe" required>
+                <div class="input-group-append">
+                    <input type="submit" class='btn btn-outline-secondary' value='add'>
+                </div>
+            </div>
+        </form>
+        <button class='unsub'>unsubscribe changes</button>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBxu7AfqcmTRzluCwA11Y17Cg7w_sq9ESw",
+            authDomain: "learning-firebase-57bfd.firebaseapp.com",
+            databaseURL: "https://learning-firebase-57bfd.firebaseio.com",
+            projectId: "learning-firebase-57bfd",
+            storageBucket: "learning-firebase-57bfd.appspot.com",
+            messagingSenderId: "944838381397",
+            appId: "1:944838381397:web:59de72a08a06c5c0"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    <script src='sandbox.js'></script>
+</body>
+
+</html>

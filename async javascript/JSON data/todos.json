@@ -1,0 +1,32 @@
+[
+    {
+        "text": "play zelda",
+        "author": "gin",
+        "point": 50,
+        "male": true
+    },
+    {
+        "text": "swimming",
+        "author": "austin",
+        "point": 3,
+        "male": true
+    },
+    {
+        "text": "study",
+        "author": "chen",
+        "point": 100,
+        "male": true
+    },
+    {
+        "text": "dinner",
+        "author": "tzuching",
+        "point": 10,
+        "male": true
+    },
+    {
+        "text": "home",
+        "author": "vicky",
+        "point": 250,
+        "male": false
+    }
+]
